@@ -1,14 +1,12 @@
-import GoogleResultsPage from './google-results-page';
+import GoogleResultsPage from "./google-results-page";
 
-const SEARCH_FIELD = 'input[type=text]';
-const SEARCH_BUTTON = 'input[type=submit]';
-const SEARCH_TEXT = 'Google Search';
-const FEEL_LUCKY_BUTTON = 'input[type=submit]';
-const FEEL_LUCKY_TEXT = 'Feeling Lucky';
+const SEARCH_FIELD = "input[type=text]";
+const SEARCH_BUTTON = "input[type=submit]";
+const SEARCH_TEXT = "Google Search";
 
 class GoogleSearchPage {
   static visit() {
-    cy.visit('/');
+    cy.visit("/");
   }
 
   static type(query) {
@@ -17,14 +15,8 @@ class GoogleSearchPage {
   }
 
   static pressSearch() {
-    cy.get(SEARCH_BUTTON).contains(SEARCH_TEXT)
-      .click();
+    cy.get(SEARCH_BUTTON).contains(SEARCH_TEXT).click();
     return new GoogleResultsPage();
-  }
-
-  static pressFeelLucky() {
-    cy.get(FEEL_LUCKY_BUTTON).contains(FEEL_LUCKY_TEXT)
-      .click();
   }
 }
 
