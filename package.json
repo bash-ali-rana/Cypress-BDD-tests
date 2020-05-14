@@ -1,0 +1,28 @@
+{
+  "name": "cypress-bdd-tests",
+  "version": "1.0.0",
+  "description": "BDD Testing example with Cypress.js & Cucumber.js",
+  "main": "index.js",
+  "dependencies": {
+    "cosmiconfig": "^6.0.0",
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bash-ali-rana/Cypress-BDD-tests.git"
+  },
+  "author": "Basharat Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bash-ali-rana/Cypress-BDD-tests/issues"
+  },
+  "homepage": "https://github.com/bash-ali-rana/Cypress-BDD-tests#readme"
+}
